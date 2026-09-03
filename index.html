@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#6d28d9">
-  <meta name="description" content="Mensagens de fé, esperança e proteção para o seu dia.">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
-  <title>Mensagem de Fé</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#07131d"><meta name="description" content="Mensagem de Fé — uma palavra de Deus para o seu dia."><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>Mensagem de Fé</title>
 </head>
 <body>
-  <main class="app">
-    <header><div class="cross">✝</div><h1>Mensagem de Fé</h1><button id="themeBtn" class="icon-btn">🌙</button></header>
-    <section class="card"><div class="quote">“</div><p id="message">Que a sua fé seja maior que os seus medos. Deus está cuidando de você.</p><span id="category">Fé</span></section>
-    <div class="actions"><button id="newBtn" class="primary">✨ Nova mensagem</button><div class="secondary-row"><button id="favBtn">♡ Favoritar</button><button id="shareBtn">📤 Compartilhar</button><button id="speakBtn">🔊 Ouvir</button></div></div>
-    <p id="status" class="status"></p>
-    <footer><p>Que Deus abençoe o seu dia. 🙏</p><button id="installBtn" class="install hidden">📱 Instalar aplicativo</button></footer>
-  </main>
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="backdrop"></div><main class="app">
+<header class="topbar"><button id="menuBtn" class="top-icon" aria-label="Menu">☰</button><div></div><button id="headerFavBtn" class="top-icon" aria-label="Favoritos">♡</button></header>
+<section class="hero"><div class="brand"><h1>Mensagem</h1><div>de Fé <span>♡</span></div></div><p class="subtitle">Deus fala ao seu coração<br>todos os dias.</p><div class="verse-card"><div class="quote-mark">“</div><p id="heroVerse">Entrega o teu caminho ao Senhor; confia nele, e o mais Ele fará.</p><strong id="heroRef">Salmos 37:5</strong></div></section>
+<section class="daily-card" id="newBtn"><div class="book-icon">📖</div><div><h2>Mensagem do Dia</h2><p>Toque para receber uma<br>mensagem abençoada</p></div><button aria-label="Nova mensagem">→</button></section>
+<section class="section"><h2>Categorias</h2><div class="categories"><button data-cat="Fé">🕊️<span>Fé</span></button><button data-cat="Esperança">🌿<span>Esperança</span></button><button data-cat="Proteção">🛡️<span>Proteção</span></button><button data-cat="Família">👨‍👩‍👧<span>Família</span></button><button data-cat="Bom dia">☀️<span>Bom Dia</span></button><button data-cat="Boa noite">🌙<span>Boa Noite</span></button></div></section>
+<section class="section favorites-section"><div class="section-title"><h2>Favoritas</h2><button id="showFavs">Ver todas ›</button></div><div id="favorites" class="favorite-grid"></div></section>
+<section class="phrase-card"><div class="lantern">🕯️</div><div class="phrase"><h2>Frase do Dia</h2><p>Que hoje você sinta o cuidado de Deus<br>em cada detalhe da sua vida.</p></div><button id="shareBtn" class="round-action">⌯<small>Compartilhar</small></button><button id="speakBtn" class="round-action">🔊<small>Ouvir</small></button></section>
+<p id="status" class="status"></p><nav class="bottom-nav"><button class="active">⌂<span>Início</span></button><button id="messagesNav">▣<span>Mensagens</span></button><button id="favNav" class="center-heart">♡</button><button id="shareNav">⌯<span>Compartilhar</span></button><button id="settingsNav">⚙<span>Configurações</span></button></nav>
+<button id="installBtn" class="install hidden">📱 Instalar aplicativo</button></main><script src="app.js"></script>
+</body></html>
